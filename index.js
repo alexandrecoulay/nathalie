@@ -23,6 +23,7 @@ require('./addrole/rolecreate');
 require('./musique/MusicBot');
 require('./message embed/idée');
 require('./fortinte/fortnite');
+require('./pile ou face/pof');
 
 bot.on('guildMemberAdd', member => {
   member.createDM().then(channel => {
@@ -121,9 +122,6 @@ if (msg.content === prefix + "steam"){
       msg.channel.send(":punch:")
       msg.react('👊')
   }
-  if (msg.content === prefix +"flip"){
-      msg.channel.send(`Result: **${Math.floor(Math.random() * 2) == 0 ? "face" : "pile"}**!`);
-    }
   }); 
     
 
