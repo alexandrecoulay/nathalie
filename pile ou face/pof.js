@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const cfg = require('../index.json');
+const cfg = process.env.token;
 bot.on('ready', function () {
     console.log("pof")
   }); 
@@ -39,4 +39,4 @@ if (command === 'flip'){
 
 
 
-bot.login(cfg.token);
+bot.login(cfg);
