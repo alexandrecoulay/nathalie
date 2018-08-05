@@ -20,7 +20,6 @@ const messageEmbed = require('./message embed/message');
 const rsteam = require('./steam recherche');
 const purge = require('./purge');
 require('./addrole/rolecreate');
-require('./musique/MusicBot');
 require('./message embed/idée');
 require('./fortinte/fortnite');
 require('./pile ou face/pof');
