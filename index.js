@@ -113,10 +113,6 @@ if (msg.content === prefix + "steam"){
     if (msg.content.match(/je suis beau/i)) {
          msg.reply('Pas d\'accord avec toi.')
     }
-    if (msg.content.match(/merde/i)){
-      msg.reply(':poop:')
-      msg.react('💩')
-  }
   if (msg.content.match(/fist bump/i)){
       msg.channel.send(":punch:")
       msg.react('👊')
