@@ -22,7 +22,7 @@ if (command === 'crole') {
     if (!args.length) return message.channel.send(`Mettre un nom de rôle, ${message.author}!`);
     
     message.member.guild.createRole({
-    name: `${args.}`.join(" "),
+    name: `${args.}`,
     color: couleur(),
   })
     var roleEmbed = new Discord.RichEmbed()            
