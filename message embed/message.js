@@ -7,7 +7,7 @@ module.exports = class messageEmbed {
 }
 
     static action (message) {
-       if (message.content === prefix + "info"){
+       if (message.content === prefix + "botinfo"){
             message.channel.send({embed: {
                 title: "le site pour les infos",
                 color: 0x18A0AE,
