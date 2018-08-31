@@ -3,7 +3,7 @@ const prefix = ("!");
 module.exports = class messageEmbed {
 
     static match (message) {
-        return message.content.startsWith('!info')
+        return message.content.startsWith('!botinfo')
 }
 
     static action (message) {
