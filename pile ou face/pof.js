@@ -12,7 +12,7 @@ const args = message.content.slice(prefix.length).split(/ +/);
 const command = args.shift().toLowerCase();
 
 if (command === 'flip'){
-     const flip = Math.floor(Math.random() * 2) == 0 ? "face" : "pile";
+     const flip = Math.floor(Math.random() * 2) == 0 ? "face" : "pile"
     let gagnant = message.guild.roles.find("name", "gagant");
     let perdant = message.guild.roles.find("name", "perdant");
     if (!args.length) return message.channel.send(`Mettre pile ou face, ${message.author}!`);
