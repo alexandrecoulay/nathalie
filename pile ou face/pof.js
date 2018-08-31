@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const cfg = process.env.token;
+const cfg = require('../index.json');
 bot.on('ready', function () {
     console.log("pof")
   }); 
@@ -12,23 +12,19 @@ const args = message.content.slice(prefix.length).split(/ +/);
 const command = args.shift().toLowerCase();
 
 if (command === 'flip'){
-     const flip = Math.floor(Math.random() * 2) == 0 ? "face" : "pile"
-    const pile = "pile";
-    const face = "face";
+     const flip = Math.floor(Math.random() * 2) == 0 ? "face" : "pile"; 
     let gagnant = message.guild.roles.find("name", "gagant");
     let perdant = message.guild.roles.find("name", "perdant");
     if (!args.length) return message.channel.send(`Mettre pile ou face, ${message.author}!`);
 
     message.channel.send(`Result: **${flip}**!`);
     if (flip == args){
-        message.channel.send("gagné");
+        message.channel.send("gagné\ntu as le role gagnant");
         message.member.addRole(gagnant).catch(console.error);
-        message.channel.send("tu as le role gagnant");
         message.member.removeRole(perdant).catch(console.error);
 
     } else {
-        message.channel.send("perdu");
-        message.channel.send("tu as le role perdant");
+        message.channel.send("perdu\ntu as le role perdant");
         message.member.addRole(perdant).catch(console.error);
         message.member.removeRole(gagnant).catch(console.error);
     }
@@ -39,4 +35,4 @@ if (command === 'flip'){
 
 
 
-bot.login(cfg);
+bot.login(cfg.token);
