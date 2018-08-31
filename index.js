@@ -23,6 +23,7 @@ require('./addrole/rolecreate');
 require('./message embed/idée');
 require('./fortinte/fortnite');
 require('./pile ou face/pof');
+require('./message embed/info');
 
 bot.on('guildMemberAdd', member => {
   member.createDM().then(channel => {
