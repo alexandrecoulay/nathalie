@@ -23,7 +23,7 @@ if(command === 'bi'){
     .setDescription(args.join(' '))
     .setFooter('Par ' + msg.author.tag, msg.author.avatarURL)
     .setColor(couleur());
-    msg.guild.channels.get("466972322973351937").send(roleEmbed);
+    msg.guild.channels.get("487298496073039872").send(roleEmbed);
     msg.delete();
 }
 
