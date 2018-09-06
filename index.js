@@ -18,7 +18,7 @@ const roleabo = require('./addrole/roleabo');
 const rolebot = require('./addrole/rolebot');
 const messageEmbed = require('./message embed/message');
 const rsteam = require('./steam recherche');
-const purge = require('./purge');
+//const purge = require('./purge');
 require('./addrole/rolecreate');
 require('./message embed/idée');
 require('./fortinte/fortnite');
