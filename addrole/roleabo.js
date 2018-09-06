@@ -13,7 +13,7 @@ module.exports = class roleabo {
         if (!member) return message.reply('Commande Invalide, il faut mettre `!roleabo @User#1234`');
         member.addRole(role).catch(console.error);
         member.removeRole(role).catch(console.error);
-        message.guild.channels.get("473493510092357633").send(`Le rôle abonné a bien été modifié pour : ${member.displayName} .`);
+        message.guild.channels.get("487298051392929802").send(`Le rôle abonné a bien été modifié pour : ${member.displayName} .`);
         }
     }
 }
