@@ -50,9 +50,9 @@ bot.on('message', function (message){
   if (ban.match(message)){
     return ban.action(message)
   }
-  if (purge.match(message)){
-    return purge.action(message)
-  }
+ // if (purge.match(message)){
+ //   return purge.action(message)
+//  }
   if (rsteam.match(message)){
     return rsteam.action(message)
   }
