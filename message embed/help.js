@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const cfg = require('../index.json');
-const prefix = ("!");
+const cfg = process.env.token;
 bot.on('ready', function () {
     console.log("help")
   });
@@ -17,4 +16,4 @@ bot.on('message', function(msg) {
     }
 });
 
-bot.login(cfg.token);
+bot.login(cfg);
