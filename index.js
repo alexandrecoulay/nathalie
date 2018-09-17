@@ -41,6 +41,30 @@ bot.on('guildMemberAdd', member => {
 bot.on('guildMemberRemove', member => {
     member.guild.channels.get("473447103960580104").send(member.displayName + " à quitté le serveur")
 });
+//xp systeme
+bot.on('message', function (message){
+    let xpAdd = Math.floor(Math.random() * 7) + 8;
+console.log(xpAdd);
+
+if (!xp[message.author.id]) {
+    xp[message.author.id] = {
+        xp: 0,
+        level: 1
+    };
+}
+let curxp = xp[message.author.id].xp;
+let curlvl = xp[message.author.id].level;
+let nxtLvl = xp[message.author.id].level * 300;
+xp[message.author.id].xp = curxp + xpAdd;
+if (nxtLvl <= xp[message.author.id].xp) {
+    xp[message.author.id].level = curlvl + 1;
+    
+}
+fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
+            if (err) console.log(err)
+    });
+});
+//fin xp
 
 bot.on('message', function (message){
   if (roleabo.match(message)){
