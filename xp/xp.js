@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefix = ("!")
-const cfg = require('../index.json');
+const cfg = process.env.token;
 let xp = require("../xp.json");
 bot.on('ready', function () {
     console.log("xp !!!")
@@ -27,11 +27,11 @@ if ( message.content === prefix + "level"){
         .setColor("#880000")
         .addField("Level", curlvl, true)
         .addField("XP", curxp, true)
-        .setFooter(`${difference} XP till level up`, message.author.displayAvatarURL);
+        .setFooter(`${difference} XP restant pour level up`, message.author.displayAvatarURL);
 
         message.channel.send(lvlEmbed).then(msg => {
             msg.delete(9000)
         });
 }
 });
-bot.login(cfg.token);
+bot.login(cfg);
