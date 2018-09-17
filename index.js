@@ -26,6 +26,7 @@ require('./pile ou face/pof');
 require('./message embed/info');
 require('./message embed/member_count');
 require("./message embed/help");
+require('./xp/xp');
 
 bot.on('guildMemberAdd', member => {
   member.createDM().then(channel => {
