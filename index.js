@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const cfg = process.env.token;
+const fs = require('fs');
+const xp = require('./xp.json');
 const prefix = ("!");
 bot.on('ready', function () {
   console.log("c'est partie !!!")
