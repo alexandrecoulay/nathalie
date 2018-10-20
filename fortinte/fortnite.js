@@ -13,7 +13,7 @@ bot.on('message', function(msg) {
         if (!args.length) return msg.channel.send('**Mettre : `!ftn [ pc | xbox | psn ] <pseudo>` **' );
         const platform = args[0]
         const epic_nickname = args[1]
-        msg.channel.send(`https://masterfortnite.com/player/${platform}/${epic_nickname}`);
+        msg.channel.send(`commande en maintenance`);
     }
 });
 
