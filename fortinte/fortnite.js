@@ -10,9 +10,6 @@ bot.on('message', function(msg) {
     const args = msg.content.slice(prefix.length).split(' ');
     const command = args.shift().toLowerCase();
     if (command === 'ftn'){
-        if (!args.length) return msg.channel.send('**Mettre : `!ftn [ pc | xbox | psn ] <pseudo>` **' );
-        const platform = args[0]
-        const epic_nickname = args[1]
         msg.channel.send(`commande en maintenance`);
     }
 });
