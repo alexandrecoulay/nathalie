@@ -46,8 +46,8 @@ bot.on('guildMemberRemove', member => {
 });
 
 
-/*bot.on('message', function (message){
-  if (roleabo.match(message)){
+bot.on('message', function (message){
+ /* if (roleabo.match(message)){
     return roleabo.action(message)
   }*/
   if (rolebot.match(message)){
