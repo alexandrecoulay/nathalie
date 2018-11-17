@@ -11,7 +11,7 @@ function couleur()  {
 
 bot.on('message', function(msg) {
     if (msg.content.startsWith("!help") ){
-        msg.channel.send("<#464333808741646347>");
+        msg.channel.send("<#513309562724679690>");
 
     }
 });
