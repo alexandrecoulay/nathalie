@@ -30,7 +30,7 @@ if (command === 'crole') {
     .setDescription(`Le role **${args}** a bien été ajouté`)
     .setFooter('Par ' + message.author.tag, message.author.avatarURL)
     .setColor(couleur());
-    message.guild.channels.get("487298051392929802").send(roleEmbed);
+    message.guild.channels.get("513308084387708938").send(roleEmbed);
         }
 });
 
