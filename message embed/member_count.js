@@ -18,4 +18,4 @@ if (message.content === prefix + "member"){
 
 
 
-bot.login(cfg);
+//bot.login(cfg);
