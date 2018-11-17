@@ -31,18 +31,18 @@ require("./message embed/help");
 //require('./xp/xp');
 
 bot.on('guildMemberAdd', member => {
-  member.createDM().then(channel => {
-    return channel.send('Bienvenue sur le serveur de ***Alexpgm*** ' + member.displayName)
-    console.log(`${member.displayName} à rejoint le serveur !!!!`)
-  }).catch(console.error)
+  //member.createDM().then(channel => {
+    //return channel.send('Bienvenue sur le serveur de ***Alexpgm*** ' + member.displayName)
+    //console.log(`${member.displayName} à rejoint le serveur !!!!`)
+ // }).catch(console.error)
     var roleEmbed = new Discord.RichEmbed()            
     .setAuthor(`Nouveau membre : `)
     .setDescription('Bienvenue sur le serveur ' + member.displayName)
     .setColor(couleur());
-    member.guild.channels.get("473447001892192256").send(roleEmbed);
+    member.guild.channels.get("513307917861126144").send(roleEmbed);
   });
 bot.on('guildMemberRemove', member => {
-    member.guild.channels.get("473447103960580104").send(member.displayName + " à quitté le serveur")
+    member.guild.channels.get("513308038485114885").send(member.displayName + " à quitté le serveur")
 });
 
 
