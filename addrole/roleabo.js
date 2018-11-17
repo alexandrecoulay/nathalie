@@ -1,4 +1,4 @@
-/*const prefix = ("!");
+const prefix = ("!");
 
 module.exports = class roleabo {
     static match (message) {
@@ -16,4 +16,4 @@ module.exports = class roleabo {
         message.guild.channels.get("487298051392929802").send(`Le rôle abonné a bien été modifié pour : ${member.displayName} .`);
         }
     }
-}*/
+}
