@@ -127,4 +127,4 @@ if (msg.content === prefix + "steam"){
   }); 
     
 
-bot.login("NDI0MjM3NTI5NDc1MzE3Nzcw.Dy53Pw.w8hziVPrNXlYR482kiQM7uSew_8");
+bot.login("bot_token");
